@@ -26,6 +26,14 @@ class JuegoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     @IBAction func camaraTapped(_ sender: Any) {
     }
+    @IBAction func agregarTapped(_ sender: Any){
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let juego = Juego(context: context)
+        juego.titulo = tituloTextField.text
+        juego.imagen = UIImagePNGRepresentation(JuegoImageView.image!) as NSData?
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        navigationController!.popViewController(animated: true)
+    }
 
 
 }
