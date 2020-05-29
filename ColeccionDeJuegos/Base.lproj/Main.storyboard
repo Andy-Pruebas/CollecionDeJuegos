@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNE-zp-OUx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNE-zp-OUx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +35,7 @@
                     <navigationItem key="navigationItem" id="9di-aj-uCG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XPL-UR-GlK">
                             <connections>
-                                <segue destination="Npf-xi-Auh" kind="show" id="C9N-I0-KdV"/>
+                                <segue destination="Npf-xi-Auh" kind="show" identifier="juegoSegue" id="C9N-I0-KdV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,6 +74,14 @@
                                     <action selector="agregarTapped:" destination="Npf-xi-Auh" eventType="touchUpInside" id="4bb-q9-4B4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O60-4q-Fbg">
+                                <rect key="frame" x="67" y="428" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="Npf-xi-Auh" eventType="touchUpInside" id="ut3-9M-MR6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WjY-Vb-Fb0"/>
@@ -94,6 +102,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="yfn-KO-dmt" id="3KN-XZ-Yfh"/>
+                        <outlet property="agregarActualizarBoton" destination="mgW-Lj-Kvb" id="N6T-GB-mD4"/>
+                        <outlet property="eliminarBoton" destination="O60-4q-Fbg" id="8SB-sG-1WB"/>
                         <outlet property="tituloTextField" destination="1Pk-ER-fqt" id="PaL-iL-hwD"/>
                     </connections>
                 </viewController>

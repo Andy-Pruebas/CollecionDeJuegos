@@ -61,11 +61,11 @@
 				7DD93645248076FB00F66E4F /* AppDelegate.swift */,
 				7DD93647248076FB00F66E4F /* ViewController.swift */,
 				7DD93649248076FB00F66E4F /* Main.storyboard */,
+				7D792B092480860E00914E45 /* JuegoViewController.swift */,
 				7DD9364F248076FD00F66E4F /* Assets.xcassets */,
 				7DD93651248076FD00F66E4F /* LaunchScreen.storyboard */,
 				7DD93654248076FD00F66E4F /* Info.plist */,
 				7DD9364C248076FB00F66E4F /* ColeccionDeJuegos.xcdatamodeld */,
-				7D792B092480860E00914E45 /* JuegoViewController.swift */,
 			);
 			path = ColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.ColeccionDeJuegos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,7 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.ColeccionDeJuegos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
